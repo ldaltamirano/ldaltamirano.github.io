@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yo-soy-lucio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans|Righteous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="/">Lucio</a>
+            </div>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobre-mi" onclick="seleccionar()">Sobre mi</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </header>
+    </div>
+    <main class="main">
+        <section class="divInicio">
+            <!-- Inicio -->
+            <div id="inicio" class="inicio">
+                <div class="contenido-banner col">
+                    <div class="contenedor-img">
+                        <img src="images/fotoE3.jpg" alt="foto de perfil">
+                    </div>
+                    <h1>LUCIO ALTAMIRANO</h1>
+                    <h2>Desarrollador Full Stack</h2>
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="mailto:lalt123@gmail.com"><i class="fa-solid fa-at"></i></a>
+                    </div>
+                    <button class="visible-lg hidden-xs">
+                        Descargar CV <i class="fa-solid fa-download"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <div class="visible-lg hidden-xs caracteristicas">
+                    <div class="presentacion">
+                        <h2>Sobre Mí</h2>
+                        <p><span>Hola, soy Lucio Altamirano.</span> Soy un desarrolador Full Stack. Tengo poco mas de 10
+                            años de experiencia en trabajos relacionados a sistemas.
+                            Me gusta trabajar en grupo, soy capaz y no me rindo con facilidad. No se absolutamente todo
+                            pero puedo decir es que si no sé algo lo voy a decir, pero investigare e intentaré resolver
+                            el problema planteado.
+                            Me gusta estar actualizado con las nuevas tecnologías. Soy de facil aprendizaje</p>
+                    </div>
+                    <div class="visible-lg hidden-xs divIntereses">
+                        <h3>Intereses</h3>
+                        <div class="contenedor-intereses">
+                            <div class="interes">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span>JUEGOS</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-headphones"></i>
+                                <span>MUSICA</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-film"></i>
+                                <span>CINE</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-futbol"></i>
+                                <span>FUTBOL</span>
+                            </div>
+
+                            <div class="interes">
+                                <i class="fa-sharp fa-solid fa-code"></i>
+                                <span>PROGRAMACION</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="sobremi hidden-lg visible-xs">
+            <div class="contenido-seccion">
+                <div class="presentacion">
+                    <h2>Sobre Mí</h2>
+                    <p><span>Hola, soy Lucio Altamirano.</span> Soy un desarrolador Full Stack. Tengo poco mas de 10
+                        años de experiencia en trabajos relacionados a sistemas.
+                        Me gusta trabajar en grupo, soy capaz y no me rindo con facilidad. No se absolutamente todo
+                        pero puedo decir es que si no sé algo lo voy a decir, pero investigare e intentaré resolver
+                        el problema planteado.
+                        Me gusta estar actualizado con las nuevas tecnologías. Soy de facil aprendizaje</p>
+                </div>
+                <div class="fila">
+                    <!-- intereses -->
+                    <div class="col">
+                        <h3>Intereses</h3>
+                        <div class="contenedor-intereses">
+                            <div class="interes">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span>JUEGOS</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-headphones"></i>
+                                <span>MUSICA</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-film"></i>
+                                <span>CINE</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-futbol"></i>
+                                <span>FUTBOL</span>
+                            </div>
+
+                            <div class="interes">
+                                <i class="fa-sharp fa-solid fa-code"></i>
+                                <span>PROGRAMACION</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+        </section>
+        <!-- SECCION SKILLS -->
+        <section class="skills" id="skills">
+            <div class="contenido-seccion">
+                <h2>Skills</h2>
+                <div class="fila">
+                    <!-- Technical Skill -->
+                    <div class="col">
+                        <h3>Conocimientos principales</h3>
+                        <div class="skill">
+                            <span>HTML & CSS</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>95%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>MVC .Net</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <span>Javascript</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>JQuery</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Bootstrap</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>60%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>.Net FrameWork</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>60%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>React</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>30%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>SQL Server</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>50%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Professional Skills -->
+                    <div class="col">
+                        <h3>Idioma</h3>
+                        <div class="skill">
+                            <span>Español</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>100%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Ingles</span>
+                            <span>Lectura</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>100%</span>
+                                </div>
+                            </div>
+                            <span>Escritura</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                            <span>Hablar</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>30%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="curriculum" class="curriculum">
+            <div class="contenido-seccion">
+                <h2>Curriculum</h2>
+                <div class="fila">
+                    <div class="col derecha">
+                        <h3>Experiencia de trabajo</h3>
+                        <div>
+                            <div class="curriculum-element">
+                                <div class="item der">
+                                    <h4>Programador .NET - Aplicaciones de escritorio</h4>
+                                    <div class="casaFecha">
+                                        <span class="casa">Optertek</span>
+                                        <span class="fecha">Noviembre 2012 - Mayo 2013</span>
+                                    </div>
+                                    <p>Durante mi tiempo en esta posición, trabaje en la implementacion, mantenimiento y
+                                        soporte de aplicaciones para radio y TV. Además, mantuve un enfoque constante en
+                                        la mejora continua, investigando y adoptando nuevas tecnologías y metodologías
+                                        que impulsaron la eficiencia y la calidad en todas las áreas de mi trabajo.</p>
+                                    <div class="conectord">
+                                        <div class="circulod"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="curriculum-element">
+                                <div class="item der">
+                                    <h4>Analista y desarrollador web - Proyectos web en MVC.NET</h4>
+                                    <div class="casaFecha">
+                                        <span class="casa">Urudata</span>
+                                        <span class="fecha">Agosto 2013 - Septiembre 2014</span>
+                                    </div>
+                                    <p>Durante mi tiempo en esta posicion, y diseñe y desarrolle software basado en un
+                                        tecnologia de workflows llamada Q-Flow. Participe en la creacion y edicion de
+                                        estructura de workflows para distintos sectores de una empresa multinacional.
+                                        Como programador web me encargue el armado de los distintos formularios web para
+                                        la plataforma.</p>
+                                    <div class="conectord">
+                                        <div class="circulod"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="curriculum-element">
+                                <div class="item der">
+                                    <h4>Consultor y desarrollador web - Proyectos web desarrolladas en MVC.NET</h4>
+                                    <div class="casaFecha">
+                                        <span class="casa">Flow Technology S.A.</span>
+                                        <span class="fecha">Octubre 2014 - Noviembre 2020</span>
+                                    </div>
+                                    <p>Durante mi tiempo en esta posicion, y diseñe y desarrolle software basado en un
+                                        tecnologia de workflows llamada Q-Flow. Participe en la creacion y edicion de
+                                        estructura de workflows para distintos sectores de una empresa multinacional.
+                                        Como programador web me encargue el armado de los distintos formularios web para
+                                        la plataforma.</p>
+                                    <div class="conectord">
+                                        <div class="circulod"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="curriculum-element">
+                                <div class="item der">
+                                    <h4>Desarrollador Web Full-Stack - Sitios E-Commerce en MVC.NET </h4>
+                                    <div class="casaFecha">
+                                        <span class="casa">E3 Ecommerce</span>
+                                        <span class="fecha">Noviembre 2020 - Actualidad</span>
+                                    </div>
+                                    <p>Durante mi tiempo en esta posicion, estuve en cargado del soporte, mantenimiento
+                                        y desarrollo de distintos sitios E-Commerce para distintos clientes. Estuve
+                                        participando tanto en desarrollo back-end como front-end, aunque me he
+                                        desempañado mas en este ultimo como mucha mas frecuencia.</p>
+                                    <div class="conectord">
+                                        <div class="circulod"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col izquierda">
+                        <h3>Educación</h3>
+                        <div>
+                            <div class="curriculum-element">
+                                <div class="item der">
+                                    <h4>Maquetado y desarrollo web</h4>
+                                    <div class="casaFecha">
+                                        <span class="casa">Escuela Da Vinci</span>
+                                        <span class="fecha">2017 - 2021</span>
+                                    </div>
+                                    <div class="conectori">
+                                        <div class="circuloi"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="curriculum-element">
+                                <div class="item der">
+                                    <h4>Licenciatura en sistemas</h4>
+                                    <div class="casaFecha">
+                                        <span class="casa">Universidad de Buenos Aires</span>
+                                        <span class="fecha">2007 - Sin finalizar</span>
+                                    </div>
+                                    <div class="conectori">
+                                        <div class="circuloi"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Colores */
+/* 
+ primary: #0F2027
+ primary: #0F2027
+*/
+
+
+html {
+    /* deslizamiento suave*/
+    scroll-behavior: smooth;
+}
+
+.contenedor-header{
+    background: url("../images/mobile/image-hero.jpg");
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-bottom: 200px;
+}
+.contenedor-header header{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+}
+.contenedor-header header .logo a{
+    font-family: 'Alata';
+    font-weight: 400;
+    font-size: 27px;
+    color: #FFF;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.contenedor-header .slogan {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 600px;
+}
+
+.contenedor-header .slogan {
+    padding: 20px;
+    margin-top: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: "Josefin Sans";
+    font-weight: normal;
+    font-size: 41px;
+    color: white;
+    border: 2px solid white;
+    min-height: 200px;
+}
+
+.nav-responsive{
+    color: #fff;
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+
+.close {
+    background-color: black !important;
+}
+
+nav{
+    display: none;
+}
+
+nav.responsive{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    background-color: black;
+    width: 100%;
+    padding: 75px 20px;
+
+}
+nav.responsive ul{
+    display: block !important;
+}
+nav.responsive ul li{
+    padding: 10px 0;
+    font-family: "Josefin Sans";
+    font-weight: normal;
+    
+}
+
+/* Seccion 1 */
+
+.section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px 15px;
+}
+
+.section > * {
+    margin: 15px 0;
+}
+
+.section picture img {
+    width: 100%;
+}
+
+.section h2 {
+    font-family: "Josefin Sans";
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+}
+
+.section p {
+    font-family: "Josefin Sans";
+    font-weight: normal;
+    font-size: 15px;
+    text-align: center;
+}
+
+.section .photo {
+    display: flex;
+    align-items: end;     
+}
+.section .photo p {
+    font-size: 26px;
+    font-weight: lighter;
+    position: absolute;
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+    text-align: left;
+}
+
+.contenedor-footer {
+    background-color: black;
+}
+
+.contenedor-footer footer{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+.contenedor-footer footer .logo a{
+    font-family: 'Alata';
+    font-weight: bold;
+    font-size: 39px;
+    color: #FFF;
+    text-decoration: none;
+}
+.contenedor-footer footer ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+}
+
+.contenedor-footer footer ul li{
+    padding: 15px 0;
+}
+
+.contenedor-footer footer ul li a{
+    font-family: 'Alata';
+    color: #fff;
+    margin: 0 15px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-footer footer nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.contenedor-footer .redes {
+    padding: 40px 0;
+}
+
+.contenedor-footer .redes i{
+    color: #FFF;
+    font-size: 30px;
+    padding: 0 10px;
+}
+
+
+/*Desktop*/
+@media (min-width:975px) {
+
+    .contenedor-header {
+        background-image: url("../images/desktop/image-hero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .contenedor-header .header{
+        width: 80%;
+        margin: auto;
+    }
+    .contenedor-header header .logo a{
+        font-size: 50px;
+    }
+
+    nav li {
+        font-family: "Josefin Sans";
+        font-weight: normal;
+    }
+
+    .nav-responsive {
+        display: none;
+    }
+
+    .contenedor-header .slogan {
+        padding: 40px 20px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 50%;
+    }
+
+    .contenedor-header .slogan {
+        font-size: 70px;
+    }
+
+    nav{
+        display: block;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .uno {
+        width: 80%;
+        margin: auto;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        padding-top: 150px;
+    }
+
+    .uno div:first-child {
+        width: 66%;
+    }
+
+    .uno div:last-child {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: white;
+    }
+
+
+    .uno div:last-child h2 {
+        padding: 95px 95px 15px 95px;
+        font-size: 50px;
+        text-align: left;
+    }
+
+    .uno div:last-child p {
+        padding: 15px 95px 15px 95px;
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .dos {
+        width: 80%;
+        margin: auto;
+        position: relative;
+        display: flex;
+        padding-top: 100px;
+    }
+    .dos h2 {
+        text-align: left;
+        font-size: 30px;
+    }
+
+    .dos div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: start;
+    }
+
+    .dos .photo {
+        padding: 20px;
+    }
+
+    .contenedor-footer footer{
+        margin: 0;
+        padding-bottom: 40px;
+    }
+
+    .contenedor-footer footer > div{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .contenedor-footer footer div:first-child ul{
+        display: flex;
+        flex-direction: row;
+    }
+}
